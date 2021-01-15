@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7; }
+
+@keyframes fadeRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes fadeLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-20px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+.p-inner {
+  padding: 5rem 8rem; }
+
+.heading-secondary {
+  background: linear-gradient(120deg, #fd8989, #ff0000);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase; }
+
+.heading-tertiary {
+  color: gray;
+  margin-bottom: 1rem;
+  text-transform: uppercase; }
+
+.mt-small {
+  margin-top: 2rem;
+  text-transform: uppercase; }
+
+.intro {
+  display: flex; }
+  .intro > div {
+    flex: 50%; }
+  .intro-text-1 {
+    margin-bottom: 2rem; }
+  .intro-container {
+    position: relative; }
+  .intro-pic {
+    width: 60%;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+    border-radius: 2px;
+    position: absolute;
+    transition: all .2s; }
+    .intro-pic-1 {
+      left: -3rem;
+      top: 0; }
+    .intro-pic-2 {
+      left: 20rem;
+      top: 3rem;
+      z-index: 1; }
+    .intro-pic-3 {
+      left: 10rem;
+      top: 15rem;
+      z-index: 2; }
+    .intro-pic:hover {
+      outline-offset: 10px;
+      outline: 10px solid rgba(255, 0, 0, 0.8);
+      transform: scale(1.05);
+      box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.4); }
+
+.header {
+  position: relative;
+  height: 100vh;
+  background: url("../images/header.jpg") no-repeat center center/cover;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0% 85%); }
+  .header-primary {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    .header-primary > span {
+      display: block;
+      font-weight: 400;
+      text-transform: uppercase;
+      color: white;
+      text-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.2); }
+    .header-primary-big {
+      font-size: 6.5rem;
+      letter-spacing: 1rem;
+      animation: fadeRight 2s; }
+    .header-primary-small {
+      font-size: 3rem;
+      letter-spacing: 1.5rem;
+      animation: fadeLeft 2s; }

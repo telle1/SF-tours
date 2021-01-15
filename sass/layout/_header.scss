@@ -1,0 +1,30 @@
+.header{
+   position: relative;
+   height: 100vh;
+   background: 
+   url('../images/header.jpg') no-repeat center center/cover;
+   clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0% 85%);
+   &-primary{
+        width: 100%;
+        text-align: center;
+        @include absPosition;
+        & > span {
+            display: block;
+            font-weight: 400;
+            text-transform: uppercase;
+            color: white;
+            text-shadow: 1rem 1rem 1rem rgba($color-black, 0.2);
+        }
+        &-big{
+            font-size: 6.5rem;
+            letter-spacing: 1rem;
+            animation: fadeRight 2s;
+        }
+        &-small{
+            font-size: 3rem;
+            letter-spacing: 1.5rem;
+            animation: fadeLeft 2s;
+        }
+    }
+    
+}
