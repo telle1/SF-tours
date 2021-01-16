@@ -4,8 +4,17 @@
 @import 'base/base';
 @import 'base/animations';
 @import 'base/utils';
+@import 'base/row';
 
 @import 'components/intro';
+@import 'components/features';
+@import 'components/card';
+@import 'components/story';
+@import 'components/book';
+@import 'components/button';
 
 
 @import 'layout/header';
+@import 'layout/footer';
+
+@import 'pages/home';

@@ -1,0 +1,74 @@
+.btn {
+    &, 
+    &:link, &:visited {
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 1.5rem 4rem;
+        display: inline-block;
+        border-radius: 100px;
+        transition: all 1s;
+        position: relative;  
+        border: none;
+        cursor: pointer;
+    }
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        &::after {
+            transform: scale(1.5);
+            opacity: 0;
+        }
+    }
+    &:active, &:focus {
+        transform: translateY(-1px);
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    &::after{
+        content: "";
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+        border-radius: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: all 1s;
+    }
+    &-white{
+        background-color: white;
+        color: #777;
+        &::after{
+            background-color: white;
+        }   
+    }
+    &-red{
+        background: linear-gradient(to right, $color-primary-light, $color-primary);
+        color: white;
+        &::after{
+            background-color: $color-primary;
+        }  
+    }
+    &-text{
+        transition: all 0.5s;
+        padding: 10px;
+        &:link, &:visited{
+            font-size: 2rem;
+            color: $color-primary;
+            display: inline-block;
+            text-decoration: none;
+            border-bottom: 1px solid $color-primary;
+            padding: 3px;
+        }
+
+        &:hover{
+            background-color: $color-primary;
+            color: white;
+            padding: 10px;
+            transform: translateY(-5px);
+            box-shadow: 5px 5px 10px rgba($color-black, 0.2);
+        }
+
+
+    }
+}

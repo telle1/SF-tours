@@ -1,0 +1,14 @@
+.row{
+    
+    display: flex;
+    padding: 0rem 10rem;
+    // > * {
+    //     flex: 100%;
+    // }
+    .col-1-of-3,  .col-2-of-3,  .col-3-of-3{
+        flex: 33%;
+    }
+    .col-1-of-4,  .col-2-of-4,  .col-3-of-4, .col-4-of-4{
+        flex: 25%;
+    }
+}

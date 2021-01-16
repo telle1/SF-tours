@@ -1,0 +1,17 @@
+.features{
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(114, 69, 72, 0.8) 0%, rgba(43, 110, 150, 0.445) 50%),
+    url('../images/features.jpg') no-repeat top center/cover;
+    clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+    filter: brightness(1.4);
+    padding: 20rem 0rem;
+}
+
+.section-stories{
+    padding: 5rem 0;
+    background:  linear-gradient(to right, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url('../images/stories.png') no-repeat top center/cover;
+}
+
+.section-book{
+    padding: 5rem 5rem;
+}
