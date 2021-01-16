@@ -6,7 +6,7 @@
         padding: 1.5rem 4rem;
         display: inline-block;
         border-radius: 100px;
-        transition: all 1s;
+        transition: all .5s;
         position: relative;  
         border: none;
         cursor: pointer;
@@ -33,11 +33,11 @@
         top: 0;
         left: 0;
         z-index: -1;
-        transition: all 1s;
+        transition: all .5s;
     }
     &-white{
         background-color: white;
-        color: #777;
+        color: red;
         &::after{
             background-color: white;
         }   

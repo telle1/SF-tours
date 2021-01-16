@@ -9,6 +9,9 @@
     
     & > * {
         transform: skewX(15deg);
+        @include responsive(phone){
+            transform: skewX(0deg);
+        }
     }
 
     &_shape{
@@ -22,10 +25,12 @@
         margin-right: 40px;
         position: relative;
     }
+
     &_img {
         height: 100%;
         transform: translateX(5px) scale(1.4);
         transition: all 1s;
+
     }
     &_caption{
         position: absolute;
@@ -46,5 +51,13 @@
     &:hover &_img{
         transform: translateX(-40px) scale(1);
         filter: blur(3px) brightness(80%);
+    }
+    &_text h3{
+        @include responsive(phone){
+            display: none;
+        }
+    }
+    @include responsive(phone){
+        transform: skewX(0);
     }
 }

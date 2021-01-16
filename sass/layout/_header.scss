@@ -1,8 +1,12 @@
 .header{
    position: relative;
    height: 100vh;
-   background: 
-   url('../images/header.jpg') no-repeat center center/cover;
+   background-image: linear-gradient(120deg,rgba(43, 110, 150, 0.445) 0%, rgba(43, 110, 150, 0.445) 50%,rgba(230, 88, 95, 0.445) ),
+   url('../images/header.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 25% 40%;
+
    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0% 85%);
    &-primary{
         width: 100%;

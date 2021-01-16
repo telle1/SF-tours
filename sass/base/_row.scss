@@ -11,4 +11,17 @@
     .col-1-of-4,  .col-2-of-4,  .col-3-of-4, .col-4-of-4{
         flex: 25%;
     }
+    .col-1-of-3,  .col-2-of-3,  .col-3-of-3,
+    .col-1-of-4,  .col-2-of-4,  .col-3-of-4 {
+        @include responsive(tab-port){
+        margin-bottom: 3rem;
+        }
+    }
+
+    @include responsive(tab-port){
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0rem 5rem;
+    }
+  
 }

@@ -83,9 +83,21 @@ h5 {
     flex: 33%; }
   .row .col-1-of-4, .row .col-2-of-4, .row .col-3-of-4, .row .col-4-of-4 {
     flex: 25%; }
+  @media (max-width: 56.25em) {
+    .row .col-1-of-3, .row .col-2-of-3, .row .col-3-of-3,
+    .row .col-1-of-4, .row .col-2-of-4, .row .col-3-of-4 {
+      margin-bottom: 3rem; } }
+  @media (max-width: 56.25em) {
+    .row {
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 0rem 5rem; } }
 
 .intro-left, .intro-right {
   flex: 50%; }
+  @media (max-width: 56.25em) {
+    .intro-left, .intro-right {
+      width: 100%; } }
 
 .intro-text-1 {
   margin-bottom: 2rem; }
@@ -94,7 +106,7 @@ h5 {
   position: relative; }
 
 .intro-pic {
-  width: 55%;
+  width: 50%;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
   border-radius: 2px;
   position: absolute;
@@ -103,18 +115,21 @@ h5 {
     left: 4rem;
     top: 0; }
   .intro-pic-2 {
-    left: 25rem;
+    left: 28rem;
     top: 3rem;
     z-index: 1; }
   .intro-pic-3 {
     left: 14rem;
-    top: 15rem;
+    top: 10rem;
     z-index: 2; }
   .intro-pic:hover {
     outline-offset: 10px;
     outline: 10px solid rgba(255, 0, 0, 0.8);
     transform: scale(1.05);
     box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.4); }
+  @media (max-width: 56.25em) {
+    .intro-pic {
+      display: none; } }
 
 .feature-box {
   background-color: rgba(255, 255, 255, 0.5);
@@ -138,7 +153,7 @@ h5 {
 .card {
   position: relative;
   perspective: 1000px;
-  height: 53vh;
+  height: 40rem;
   width: 90%;
   margin: 0 auto; }
   .card > * {
@@ -223,6 +238,12 @@ h5 {
     transform: rotateY(-180deg); }
   .card:hover .card-back {
     transform: rotateY(0deg); }
+  @media (max-width: 56.25em) {
+    .card {
+      width: 50%; } }
+  @media (max-width: 37.5em) {
+    .card {
+      width: 80%; } }
 
 .story {
   width: 75%;
@@ -234,6 +255,9 @@ h5 {
   transform: skewX(-15deg); }
   .story > * {
     transform: skewX(15deg); }
+    @media (max-width: 37.5em) {
+      .story > * {
+        transform: skewX(0deg); } }
   .story_shape {
     overflow: hidden;
     width: 150px;
@@ -265,6 +289,12 @@ h5 {
   .story:hover .story_img {
     transform: translateX(-40px) scale(1);
     filter: blur(3px) brightness(80%); }
+  @media (max-width: 37.5em) {
+    .story_text h3 {
+      display: none; } }
+  @media (max-width: 37.5em) {
+    .story {
+      transform: skewX(0); } }
 
 .book {
   display: block;
@@ -278,15 +308,25 @@ h5 {
   .book_form {
     width: 50%;
     padding: 2rem 6rem; }
+    @media (max-width: 56.25em) {
+      .book_form {
+        padding: 2rem; } }
+  @media (max-width: 56.25em) {
+    .book {
+      width: 100%;
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 55%, transparent 55%), url("../images/book-2.jpg"); } }
 
 .form_group:not(:last-child) {
-  margin-bottom: 20px; }
+  margin-bottom: 2rem; }
+  @media (max-width: 56.25em) {
+    .form_group:not(:last-child) {
+      margin-bottom: 1rem; } }
 
 .form_input {
-  font-size: 15px;
+  font-size: 1.5rem;
   font-family: inherit;
   color: inherit;
-  padding: 15px 10px;
+  padding: 1.5rem 1rem;
   border-radius: 3px;
   background-color: rgba(255, 255, 255, 0.5);
   border: none;
@@ -316,7 +356,7 @@ h5 {
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: 100px;
-  transition: all 1s;
+  transition: all .5s;
   position: relative;
   border: none;
   cursor: pointer; }
@@ -342,11 +382,11 @@ h5 {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all 1s; }
+  transition: all .5s; }
 
 .btn-white {
   background-color: white;
-  color: #777; }
+  color: red; }
   .btn-white::after {
     background-color: white; }
 
@@ -376,7 +416,10 @@ h5 {
 .header {
   position: relative;
   height: 100vh;
-  background: url("../images/header.jpg") no-repeat center center/cover;
+  background-image: linear-gradient(120deg, rgba(43, 110, 150, 0.445) 0%, rgba(43, 110, 150, 0.445) 50%, rgba(230, 88, 95, 0.445)), url("../images/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 25% 40%;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0% 85%); }
   .header-primary {
     width: 100%;
@@ -408,7 +451,6 @@ h5 {
     font-size: 1rem; }
 
 .features {
-  height: 100vh;
   background: linear-gradient(90deg, rgba(114, 69, 72, 0.8) 0%, rgba(43, 110, 150, 0.445) 50%), url("../images/features.jpg") no-repeat top center/cover;
   clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
   filter: brightness(1.4);
