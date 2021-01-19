@@ -23,9 +23,7 @@
             font-size: 6.5rem;
             letter-spacing: 1rem;
             animation: fadeRight 2s;
-            @media(max-width:500px){
-                font-size: 5rem;
-            }
+
         }
         &-small{
             font-size: 3rem;
@@ -34,4 +32,10 @@
         }
     }
     
+}
+
+.header-primary-big{
+    @media(max-width: 500px){
+        font-size: 4rem;
+    }
 }
