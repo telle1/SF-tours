@@ -9,12 +9,12 @@
     border-radius: 3px;
     box-shadow: 0 15px 40px rgba($color-black, .2);
     width: 80%;
-    height: 40rem;
     margin: auto;
     &_form{
         width: 50%;
         padding: 2rem 6rem;
-        @include responsive(tab-port){
+        @media(max-width:600px){
+            width: 100%;
             padding: 2rem;
         }
     }
@@ -26,6 +26,13 @@
         transparent 55%),
         url('../images/book-2.jpg');
     }
+    @media(max-width:600px){
+        background-image: linear-gradient(105deg, 
+        rgba(white, .5) 0%, 
+        rgba(white, .5) 100%),
+        url('../images/book-2.jpg');
+    }
+
 }
 
 .form{
@@ -67,5 +74,4 @@
         visibility: hidden;
         transform: translateY(-4rem);
     }
-
 }
