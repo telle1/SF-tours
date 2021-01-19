@@ -5,6 +5,9 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 37.5em) {
+    html {
+      width: 100%; } }
 
 body {
   font-family: "Lato", sans-serif;
@@ -31,50 +34,6 @@ body {
   100% {
     opacity: 1;
     transform: translate(0); } }
-
-.p-inner {
-  padding: 5rem 8rem; }
-
-.py-small {
-  padding: 5rem 0rem; }
-
-.heading-secondary {
-  background: linear-gradient(120deg, #fd8989, #ff0000);
-  -webkit-background-clip: text;
-  color: transparent;
-  font-size: 3rem;
-  text-align: center;
-  text-transform: uppercase; }
-  .heading-secondary-left {
-    text-align: left;
-    margin-bottom: 2rem; }
-  .heading-secondary-sm {
-    font-size: 2rem;
-    text-align: left; }
-
-h5 {
-  background: linear-gradient(120deg, #fd8989, #ff0000);
-  -webkit-background-clip: text;
-  color: transparent; }
-
-.heading-tertiary {
-  color: gray;
-  margin-bottom: 1rem;
-  text-transform: uppercase; }
-  .heading-tertiary-wh {
-    color: white; }
-
-.mt-small {
-  margin-top: 2rem; }
-
-.mb-small {
-  margin-bottom: 2rem; }
-
-.mt-m {
-  margin-top: 4rem; }
-
-.mt-l {
-  margin-top: 6rem; }
 
 .row {
   display: flex;
@@ -234,6 +193,10 @@ h5 {
       background-image: linear-gradient(to right bottom, #fbb034, #ffdd00); }
     .card-back-3 {
       background-image: linear-gradient(to right bottom, #fd8989, #ff0000); }
+    .card-back .btn-1 {
+      color: #0a72fa; }
+    .card-back .btn-2 {
+      color: #fbb034; }
   .card:hover .card-front {
     transform: rotateY(-180deg); }
   .card:hover .card-back {
@@ -289,7 +252,7 @@ h5 {
     float: left;
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
-    margin-right: 40px;
+    margin-right: 4rem;
     position: relative; }
   .story_img {
     height: 100%;
@@ -462,6 +425,9 @@ h5 {
       font-size: 6.5rem;
       letter-spacing: 1rem;
       animation: fadeRight 2s; }
+      @media (max-width: 500px) {
+        .header-primary-big {
+          font-size: 5rem; } }
     .header-primary-small {
       font-size: 3rem;
       letter-spacing: 1.5rem;
@@ -479,6 +445,10 @@ h5 {
   clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
   filter: brightness(1.4);
   padding: 20rem 0rem; }
+  @media (max-width: 37.5em) {
+    .features {
+      clip-path: polygon(0 0, 100% 3%, 100% 97%, 0 100%);
+      padding: 10rem 0rem; } }
 
 .section-stories {
   padding: 5rem 0;

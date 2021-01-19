@@ -100,7 +100,6 @@
                 font-weight: 100;
                 font-size: 60px;
             }
-            
         }
 
         &-1{
@@ -111,6 +110,12 @@
         }
         &-3{
             background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary);
+        }
+        .btn-1{
+            color: rgb(10, 114, 250)
+        }
+        .btn-2{
+            color: #fbb034;
         }
     }
     &:hover &-front{

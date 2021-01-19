@@ -4,6 +4,10 @@
     clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
     filter: brightness(1.4);
     padding: 20rem 0rem;
+    @include responsive(phone){
+        clip-path: polygon(0 0, 100% 3%, 100% 97%, 0 100%); 
+        padding: 10rem 0rem;
+    }
 }
 
 .section-stories{
